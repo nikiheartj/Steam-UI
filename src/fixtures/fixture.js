@@ -18,12 +18,12 @@ export const test = base.extend({
   addGameToShoppingCart: async ({ page, baseURL }, use) => {
     const steam = new Steam(page);
 
-    const game = "No Rest for the Wicked"; // Set a game you wish to search in the store
+    const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
     await steam.navbar.openMainPage(baseURL);
     await steam.mainPage.searchGame(game);
     await steam.mainPage.selectGameInDropdown(game);
-    await steam.gamePage.addGameToShoppingCart();
+    await steam.gamePage.addGameToShoppingCart(game);
     await steam.gamePage.clickViewMyCartButton();
 
     await expect(steam.shoppingCart.gameName).toContainText(game);

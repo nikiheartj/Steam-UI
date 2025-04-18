@@ -98,7 +98,7 @@ test("Search game via search bar", async ({ page, baseURL }) => {
 
 test("Add game to the shopping cart", async ({ baseURL, page }) => {
   const steam = new Steam(page);
-  const game = "No Rest for the Wicked"; // Set a game you wish to search in the store
+  const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
   await steam.navbar.openMainPage(baseURL);
   await steam.mainPage.searchGame(game);
