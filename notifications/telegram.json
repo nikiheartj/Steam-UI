@@ -1,0 +1,17 @@
+{
+    "base": {
+      "project": "Steam",
+      "environment": "some env",
+      "comment": "some comment",
+      "reportLink": "",
+      "language": "en",
+      "allureFolder": "allure-report",
+      "enableChart": true,
+      "logo": "/Users/nik_/Repositories/Steam-UI/src/logo.jpg"
+    },
+    "telegram": {
+      "token": "7303020735:AAGjeZ_m8r0UVFYeSmMrSqLjKk1-qYi-4T8",
+      "chat": "-4643896147",
+      "replyTo": ""
+    }
+  }

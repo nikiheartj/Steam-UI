@@ -74,7 +74,7 @@ test("Select a special game category", async ({ page, baseURL }) => {
   await steam.mainPage.hoverCategoriesMenu();
   await steam.mainPage.selectCategory(category);
 
-  await test.step(`Expected Result: ${category} games page is opened`, async () => {
+  await test.step(`Expected Result: ${category} category is opened`, async () => {
     await expect(steam.mainPage.titleCategory).toContainText(category);
   });
 });
@@ -87,9 +87,7 @@ test("Search game via search bar", async ({ page, baseURL }) => {
   await steam.mainPage.searchGame(game);
 
   await test.step(`Expected Result: ${game} is found`, async () => {
-    await expect(steam.mainPage.gameInSearchList(game)).toContainText(
-      game
-    );
+    await expect(steam.mainPage.gameInSearchList(game)).toContainText(game);
   });
 });
 

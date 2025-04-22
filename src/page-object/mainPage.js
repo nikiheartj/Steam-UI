@@ -39,7 +39,11 @@ export class MainPage extends MainURL {
   async selectCategory(category) {
     await test.step("Select game category", async () => {
       await this.categoryButton(category).click();
+<<<<<<< HEAD
       await this.page.waitForTimeout(500); // Wait for loading page
+=======
+      await this.page.waitForTimeout(1000); // Wait for loading page
+>>>>>>> 9de2f03 (added notifications folder)
     });
   }
 
