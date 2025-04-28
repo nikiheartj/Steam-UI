@@ -1,7 +1,7 @@
 import { expect } from "@playwright/test";
 import { test } from "../src/fixtures/index";
 import { UserBuilder } from "../src/helpers/index";
-import { Steam } from "../src/page-object/steam";
+import { Steam } from "../src/page-object/steam.js";
 import { CREDENTIAL, FRIEND_CODE } from "../src/setup/index.js";
 
 test("Login to account", async ({ page, baseURL }) => {
@@ -17,7 +17,10 @@ test("Login to account", async ({ page, baseURL }) => {
   });
 });
 
-test("Update profile data in the profile page", async ({ page, loginUser }) => {
+test("Update profile information on the profile page", async ({
+  page,
+  loginUser,
+}) => {
   const steam = new Steam(page);
   const userBuilder = new UserBuilder()
     .addProfileName()
@@ -50,7 +53,7 @@ test("Update profile data in the profile page", async ({ page, loginUser }) => {
   });
 });
 
-test("Change language", async ({ page, baseURL }) => {
+test("Change a language", async ({ page, baseURL }) => {
   const steam = new Steam(page);
   const language = "Français (French)"; // You can set the language as a value that relevant to steam
 
@@ -79,7 +82,7 @@ test("Select a special game category", async ({ page, baseURL }) => {
   });
 });
 
-test("Search game via search bar", async ({ page, baseURL }) => {
+test("Search a game via search bar", async ({ page, baseURL }) => {
   const steam = new Steam(page);
   const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
@@ -91,7 +94,7 @@ test("Search game via search bar", async ({ page, baseURL }) => {
   });
 });
 
-test("Add game to the shopping cart", async ({ baseURL, page }) => {
+test("Add a game to the shopping cart", async ({ baseURL, page }) => {
   const steam = new Steam(page);
   const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
@@ -106,7 +109,7 @@ test("Add game to the shopping cart", async ({ baseURL, page }) => {
   });
 });
 
-test("Remove game from the shopping cart", async ({
+test("Remove a game from the shopping cart", async ({
   page,
   addGameToShoppingCart,
 }) => {
@@ -121,7 +124,7 @@ test("Remove game from the shopping cart", async ({
   });
 });
 
-test("Search friend by the code", async ({ page, loginUser }) => {
+test("Search for a friend using a code", async ({ page, loginUser }) => {
   const steam = new Steam(page);
   const FRIEND_NAME = "Krayvan"; // Set a friend name as a value you want to find in steam
 

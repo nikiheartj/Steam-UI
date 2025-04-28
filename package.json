@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npx playwright test",
     "ui": "npx playwright test --ui",
-    "a-create": "npx allure generate -c",
-    "a-open": "npx allure open ./allure-report",
+    "create-report": "npx allure generate -c",
+    "open-report": "npx allure open ./allure-report",
     "telegram": "java -DconfigFile=notifications/telegram.json -jar notifications/allure-notifications-4.9.0.jar"
   },
   "keywords": [],
