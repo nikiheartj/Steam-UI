@@ -1,6 +1,6 @@
 <h1 >Automation UI project for <a href="https://store.steampowered.com/ ">Steam</a></h1>
 
-![Steam_logo.svg.png](src/logo.jpg)
+![Steam_logo.svg.png](src/images/logo.jpg)
 
 ## :bookmark_tabs: Сontent
 
