@@ -77,7 +77,7 @@ npm run open-report
 ## <img src="src/images/jenkins.svg" width="25" height="25"/></a> Running tests in Jenkins
 
 <a target="_blank" href="https://jenkins.autotests.cloud/job/002-niki.heartj-steam/
-/">Build in Jenkins</a>
+/">Workflow in Jenkins</a>
 
 <p align="center">
 
