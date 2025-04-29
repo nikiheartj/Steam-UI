@@ -105,7 +105,7 @@ npm run open-report
 
 ### Tests
 
-> Each check is accompanied by a screenshot of the last action in the test and logs..
+> Each check is accompanied by a screenshot of the last action in the test and record & trace.
 
 <p align="center">
 <img title="Allure Tests" src="">
