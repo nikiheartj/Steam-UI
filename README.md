@@ -10,6 +10,8 @@
 
 - <a href="#console">Run tests from the command line</a>
 
+- <a href="#github">Running tests in GitHub Actions</a>
+
 - <a href="#jenkins">Running tests in Jenkins</a>
 
 - <a href="#allure">Test reports in Allure Report</a>
@@ -24,7 +26,7 @@
 
 ## Technology Stack
 
-| JavaScript                                                                                                    | VS Code                                                                                                                             | GitHub                                                                                                    | Playwright                                                                                                         | Allure                                                                                                          | Test-Ops                                                                                                      | Telegram                                                                                                        |                                                                                                         Jenkins |
+| JavaScript                                                                                                    | VS Code                                                                                                                             | GitHub                                                                                                    | Playwright                                                                                                         | Allure                                                                                                          | Allure TestOps                                                                                                | Telegram                                                                                                        |                                                                                                         Jenkins |
 | :------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------: |
 | <a href="https://nodejs.org/en"><img src="src/images/JavaScript.svg" width="50" height="50"  alt="Java"/></a> | <a id ="tech" href="https://code.visualstudio.com/"><img src="src/images/VSCode Image.png" width="50" height="50"  alt="IDEA"/></a> | <a href="https://github.com/"><img src="src/images/gitHub.svg" width="50" height="50"  alt="Github"/></a> | <a href="https://playwright.dev/"><img src="src/images/playwright.svg" width="50" height="50"  alt="JUnit 5"/></a> | <a href="https://allurereport.org/"><img src="src/images/allure.png" width="50" height="50"  alt="Gradle"/></a> | <a href="https://qatools.ru/"><img src="src/images/test-ops.png" width="50" height="50"  alt="Selenide"/></a> | <a href="https://telegram.org/"><img src="src/images/telegram.svg" width="50" height="50"  alt="Selenoid"/></a> | <a href="https://www.jenkins.io/"><img src="src/images/jenkins.svg" width="50" height="50"  alt="Jenkins"/></a> |
 
@@ -51,32 +53,36 @@
 npm t
 ```
 
+### Create & open allure-report locally
+
+```
+npm run create-report
+npm run open-report
+```
+
 <a id="jenkins"></a>
 
-## <img src="media/logo/Jenkins.svg" width="25" height="25"/></a> Running tests in Jenkins
+## <img src="src/images/jenkins.svg" width="25" height="25"/></a> Running tests in Jenkins
 
-<a target="_blank" href="https://jenkins.autotests.cloud/job/18-johnnyhlammaster-steamUiProject
-/">Сборка в Jenkins</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/002-niki.heartj-steam/
+/">Build in Jenkins</a>
 
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="media/screenshots/jenkins.jpg" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/jenkins_dashboard.png" alt="Jenkins"/></a>
 
-> Сборка с параметрами позволяет перед запуском изменить параметры для сборки (путем выбора из списка или прямым указанием значения).
-> Клик по иконкам Allure TestOps и Allure Report позволяет перейти на просмотр страниц с тестовой документацией и отчетов.
-
-<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="media/screenshots/param.png" alt="Jenkins"/></a>
+> To start running the tests, you need to log in to the Jenkins website, navigate to the required job, and click "Build Now." After the pipeline completes, an Allure report will be generated, and the test results will be sent to Allure TestOps and Telegram.
 
 </p>
 
 <a id="allure"></a>
 
-## <img src="media/logo/Allure.svg" width="25" height="25"/></a> Test reports in [Allure Report](https://jenkins.autotests.cloud/job/18-johnnyhlammaster-steamUiProject/20/allure/)
+## <img src="src/images/allure.png" width="25" height="25"/></a> Test reports in [Allure Report](https://jenkins.autotests.cloud/job/18-johnnyhlammaster-steamUiProject/20/allure/)
 
 ### Main window
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="media/screenshots/alluremain.jpg">
+<img title="Allure Overview Dashboard" src="src/images/testops.png">
 </p>
 
 ### Tests
@@ -84,42 +90,36 @@ npm t
 > Each check is accompanied by a screenshot of the last action in the test and logs..
 
 <p align="center">
-<img title="Allure Tests" src="media/screenshots/allure2.jpg">
+<img title="Allure Tests" src="src/images/testo-ops-dashboard.png">
 </p>
 
 <a id="allure-testops"></a>
 
-## <img src="media/logo/Allure_TO.svg" width="25" height="25"/></a> Integration with [Allure TestOps](https://allure.autotests.cloud/project/2296/dashboards)
-
-> Integration Allure TestOps with Jenkins allows launching several special tests & track track their execution in online format.
-
-<p align="center">
-<img title="Allure TestOps" src="media/screenshots/photo_2023-05-24_15-30-17.jpg">
-</p>
+## <img src="src/images/test-ops.png" width="25" height="25"/></a> Integration with [Allure TestOps](https://allure.autotests.cloud/project/2296/dashboards)
 
 > Test runs can be visualized as charts.
 
 <p align="center">
-<img title="Allure TestOps" src="media/screenshots/dashboard.jpg">
+<img title="Allure TestOps" src="src/images/testo-ops-dashboard.png">
 </p>
 
 > Test cases stay up-to-date since scenarios are extracted from the code.
 
 <p align="center">
-<img title="Allure TestOps" src="media/screenshots/testk.jpg">
+<img title="Allure TestOps" src="src/images/testcases-test-ops.png">
 </p>
 
 <a id="telegram"></a>
 
-## <img src="media/logo/Telegram.svg" width="25" height="25"/></a> Notifications in Telegram using a bot
+## <img src="src/images/telegram.svg" width="25" height="25"/></a> Notifications in Telegram using a bot
 
 <p >
-<img title="telegram bot" src="media/screenshots/tele.jpg">
+<img title="telegram bot" src="src/images/notification.png">
 </p>
 
 <a id="video"></a>
 
-## <img src="media/logo/Selenoid.svg" width="25" height="25"/></a> Playwright Test Run Example
+## <img src="src/images/playwright.svg" width="25" height="25"/></a> Playwright Test Run Example
 
 > Test run recording: "Login to account".
 
