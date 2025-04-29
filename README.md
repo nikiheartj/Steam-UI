@@ -60,18 +60,17 @@ npm run create-report
 npm run open-report
 ```
 
-<a id="jenkins"></a>
+<a id="github"></a>
 
-## <img src="src/images/jenkins.svg" width="25" height="25"/></a> Running tests in Jenkins
-
-<a target="_blank" href="https://jenkins.autotests.cloud/job/002-niki.heartj-steam/
-/">Build in Jenkins</a>
+## <img src="src/images/gitHub.svg" width="25" height="25"/></a> Running tests in GitHub Actions
 
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/jenkins_dashboard.png" alt="Jenkins"/></a>
+<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/guthub.png" alt="GitHub"/></a>
 
-> To start running the tests, you need to log in to the Jenkins website, navigate to the required job, and click "Build Now." After the pipeline completes, an Allure report will be generated, and the test results will be sent to Allure TestOps and Telegram.
+> The workflow is configured for manual triggering via GitHub Actions. To start it, go to the "Actions" section in the repository, select the "Playwright tests" workflow, and click "Run workflow."
+
+
 
 </p>
 

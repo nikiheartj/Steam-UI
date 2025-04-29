@@ -1,5 +1,5 @@
 # Name workflow
-name: pw test
+name: steam-ui-tests
 
 # When launch auto-tests
 on:
