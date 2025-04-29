@@ -108,7 +108,7 @@ npm run open-report
 > Each check is accompanied by a screenshot of the last action in the test and record & trace.
 
 <p align="center">
-<img title="Allure Tests" src="">
+<img title="Allure Tests" src="src/images/test-cases-report.png">
 </p>
 
 <a id="allure-testops"></a>
@@ -142,5 +142,5 @@ npm run open-report
 > Test run recording: "Add a game to the shopping cart".
 
 <p align="center">
-  <img title="Playwright Record" src="src/test.gif">
+  <img title="Playwright Record" src="src/images/test.gif">
 </p>
