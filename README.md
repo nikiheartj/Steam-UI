@@ -139,8 +139,8 @@ npm run open-report
 
 ## <img src="src/images/playwright.svg" width="25" height="25"/></a> Playwright Test Run Example
 
-> Test run recording: "Login to account".
+> Test run recording: "Add a game to the shopping cart".
 
 <p align="center">
-  <img title="Playwright Record" src="src/video.webm">
+  <img title="Playwright Record" src="src/test.gif">
 </p>
