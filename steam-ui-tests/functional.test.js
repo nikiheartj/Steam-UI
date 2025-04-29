@@ -2,20 +2,7 @@ import { expect } from "@playwright/test";
 import { test } from "../src/fixtures/index";
 import { UserBuilder } from "../src/helpers/index";
 import { Steam } from "../src/page-object/steam.js";
-import { CREDENTIAL, FRIEND_CODE } from "../src/setup/index.js";
-
-test("Login to account", async ({ page, baseURL }) => {
-  const steam = new Steam(page);
-
-  await steam.navbar.openMainPage(baseURL);
-  await steam.navbar.gotoLoginPage();
-  await steam.loginPage.loginUser(CREDENTIAL.name, CREDENTIAL.password);
-  await steam.navbar.gotoAccountPage();
-
-  await test.step("Expected Result: User is logged in", async () => {
-    await expect(steam.accountPage.accountName).toContainText(CREDENTIAL.name);
-  });
-});
+import { FRIEND_CODE } from "../src/setup/index.js";
 
 test("Update profile information on the profile page", async ({
   page,
@@ -53,40 +40,25 @@ test("Update profile information on the profile page", async ({
   });
 });
 
-test("Change a language", async ({ page, baseURL }) => {
+test("Change a language", async ({ page, openMaiPage }) => {
   const steam = new Steam(page);
   const language = "Français (French)"; // You can set the language as a value that relevant to steam
 
-  await steam.navbar.openMainPage(baseURL);
   await steam.navbar.openLanguageDropdown();
   await steam.navbar.selectLanguage(language);
   await steam.navbar.openLanguageDropdown();
 
-  await test.step(`Expected Result: ${language} language is applied to the ${baseURL}`, async () => {
+  await test.step(`Expected Result: ${language} language is applied to the Steam`, async () => {
     await expect(page.locator("#language_dropdown")).not.toContainText(
       language
     );
   });
 });
 
-test("Select a special game category", async ({ page, baseURL }) => {
-  const steam = new Steam(page);
-  const category = "Action"; // You can set any steam category you want as a value
-
-  await steam.navbar.openMainPage(baseURL);
-  await steam.mainPage.hoverCategoriesMenu();
-  await steam.mainPage.selectCategory(category);
-
-  await test.step(`Expected Result: ${category} category is opened`, async () => {
-    await expect(steam.mainPage.titleCategory).toContainText(category);
-  });
-});
-
-test("Search a game via search bar", async ({ page, baseURL }) => {
+test("Search a game via search bar", async ({ page, openMaiPage }) => {
   const steam = new Steam(page);
   const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
-  await steam.navbar.openMainPage(baseURL);
   await steam.mainPage.searchGame(game);
 
   await test.step(`Expected Result: ${game} is found`, async () => {
@@ -94,11 +66,10 @@ test("Search a game via search bar", async ({ page, baseURL }) => {
   });
 });
 
-test("Add a game to the shopping cart", async ({ baseURL, page }) => {
+test("Add a game to the shopping cart", async ({ openMaiPage, page }) => {
   const steam = new Steam(page);
   const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
 
-  await steam.navbar.openMainPage(baseURL);
   await steam.mainPage.searchGame(game);
   await steam.mainPage.selectGameInDropdown(game);
   await steam.gamePage.addGameToShoppingCart(game);

@@ -1,6 +1,6 @@
 <h1 >Automation UI project for <a href="https://store.steampowered.com/ ">Steam</a></h1>
 
-![Steam_logo.svg.png](src/images/logo.jpg)
+![Steam_logo.svg.png](src/images/steam.jpg)
 
 ## :bookmark_tabs: Сontent
 
@@ -83,7 +83,7 @@ npm run open-report
 
 <a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/jenkins_dashboard.png" alt="Jenkins"/></a>
 
-> To start running the tests, you need to log in to the Jenkins website, navigate to the required job, and click "Build Now." After the pipeline completes, an Allure report will be generated, and the test results will be sent to Allure TestOps and Telegram.
+> To start running the tests, you need to log in to the Jenkins website, navigate to the job, and click "Build Now." After the pipeline is completed, Allure report will be generated, and the test results will be sent to Allure TestOps and Telegram.
 
 </p>
 
@@ -105,7 +105,7 @@ npm run open-report
 
 ### Tests
 
-> Each check is accompanied by a screenshot of the last action in the test and record & trace.
+> Each check is accompanied by a screenshot of the last action in the test, record & trace.
 
 <p align="center">
 <img title="Allure Tests" src="src/images/test-cases-report.png">
@@ -113,7 +113,7 @@ npm run open-report
 
 <a id="allure-testops"></a>
 
-## <img src="src/images/test-ops.png" width="25" height="25"/></a> Integration with [Allure TestOps](https://allure.autotests.cloud/project/2296/dashboards)
+## <img src="src/images/test-ops.png" width="25" height="25"/></a> Integration with [Allure TestOps]()
 
 > Test runs can be visualized as charts.
 
