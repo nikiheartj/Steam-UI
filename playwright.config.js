@@ -44,7 +44,10 @@ export default defineConfig({
     baseURL: "https://store.steampowered.com/",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: "on-first-retry",
-    screenshot: "only-on-failure",
+    screenshot: "on",
+    video: {
+      mode: "on",
+    },
   },
 
   /* Configure projects for major browsers */

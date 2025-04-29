@@ -66,22 +66,41 @@ npm run open-report
 
 <p align="center">
 
-<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/guthub.png" alt="GitHub"/></a>
+<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/gitgub-actions.png" alt="GitHub"/></a>
 
-> The workflow is configured for manual triggering via GitHub Actions. To start it, go to the "Actions" section in the repository, select the "Playwright tests" workflow, and click "Run workflow."
+> The workflow is configured for manual triggering via GitHub Actions.
 
+</p>
 
+<a id="jenkins"></a>
+
+## <img src="src/images/jenkins.svg" width="25" height="25"/></a> Running tests in Jenkins
+
+<a target="_blank" href="https://jenkins.autotests.cloud/job/002-niki.heartj-steam/
+/">Build in Jenkins</a>
+
+<p align="center">
+
+<a href="https://jenkins.autotests.cloud/job/AD_demo_ui_steam/"><img src="src/images/jenkins_dashboard.png" alt="Jenkins"/></a>
+
+> To start running the tests, you need to log in to the Jenkins website, navigate to the required job, and click "Build Now." After the pipeline completes, an Allure report will be generated, and the test results will be sent to Allure TestOps and Telegram.
 
 </p>
 
 <a id="allure"></a>
 
-## <img src="src/images/allure.png" width="25" height="25"/></a> Test reports in [Allure Report](https://jenkins.autotests.cloud/job/18-johnnyhlammaster-steamUiProject/20/allure/)
+## <img src="src/images/allure.png" width="25" height="25"/></a> Test reports in [Allure Report](https://nikiheartj.github.io/Steam-UI/17/index.html#graph)
 
 ### Main window
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="src/images/testops.png">
+<img title="Allure Overview Dashboard" src="src/images/allure-main.png">
+</p>
+
+### Graphs window
+
+<p align="center">
+<img title="Allure Graphs" src="src/images/allure-graph.png">
 </p>
 
 ### Tests
@@ -89,7 +108,7 @@ npm run open-report
 > Each check is accompanied by a screenshot of the last action in the test and logs..
 
 <p align="center">
-<img title="Allure Tests" src="src/images/testo-ops-dashboard.png">
+<img title="Allure Tests" src="">
 </p>
 
 <a id="allure-testops"></a>
@@ -123,5 +142,5 @@ npm run open-report
 > Test run recording: "Login to account".
 
 <p align="center">
-  <img title="Playwright Record" src="media/video/d879d2ab0c4ea4a2f7871c48c2b2df0b.gif">
+  <img title="Playwright Record" src="src/video.webm">
 </p>
