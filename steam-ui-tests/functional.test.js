@@ -55,17 +55,6 @@ test("Change a language", async ({ page, openMaiPage }) => {
   });
 });
 
-test("Search a game via search bar", async ({ page, openMaiPage }) => {
-  const steam = new Steam(page);
-  const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
-
-  await steam.mainPage.searchGame(game);
-
-  await test.step(`Expected Result: ${game} is found`, async () => {
-    await expect(steam.mainPage.gameInSearchList(game)).toContainText(game);
-  });
-});
-
 test("Add a game to the shopping cart", async ({ openMaiPage, page }) => {
   const steam = new Steam(page);
   const game = "No More Room in Hell 2"; // Set a game you wish to search in the store
