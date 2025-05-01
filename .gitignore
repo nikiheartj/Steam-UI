@@ -3,7 +3,6 @@
 /playwright-report/
 /blob-report/
 /playwright/.cache/
-/notifications/
 allure-report
 allure-results
 .allure
