@@ -3,13 +3,14 @@ import { Steam } from "../page-object/steam";
 import { CREDENTIAL } from "../setup/index.js";
 
 export const test = base.extend({
-  openMaiPage: async ({ page, baseURL }, use) => {
+  steam: async ({ page, baseURL }, use) => {
     const steam = new Steam(page);
 
     await steam.navbar.openMainPage(baseURL);
 
     await use(steam);
   },
+
   loginUser: async ({ page, baseURL }, use) => {
     const steam = new Steam(page);
 
