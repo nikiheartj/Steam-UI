@@ -82,7 +82,7 @@ jobs:
         env:
           BASE_URL: ${{ github.event.inputs.BaseURL }}
           CI: true
-        run: npx playwright test --workers=2
+        run: npx playwright test
 
       - name: Save playwright-results
         uses: actions/upload-artifact@v4
