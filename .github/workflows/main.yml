@@ -51,7 +51,6 @@ jobs:
       - name: Install npm
         run: npm i
 
-      # # Install PW with dependencies
       # - name: Install PW with dependencies
       #   run: npx playwright install --with-deps
 
