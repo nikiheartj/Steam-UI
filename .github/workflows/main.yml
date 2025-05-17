@@ -74,8 +74,10 @@ jobs:
         if: steps.cache-pw.outputs.cache-hit == 'true'
         run: npx playwright install-deps
 
-      - name: Cleanup Allure results
-        run: rm -rf allure-results
+      # - name: Cleanup Allure & Playwright reports
+      #   run: |
+      #     rm -rf allure-results allure-report
+      #     rm -rf playwright-report test-results .playwright
 
       - name: Launch auto-tests with ENV-override
         env:

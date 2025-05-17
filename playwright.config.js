@@ -44,9 +44,8 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('/')`. */
     baseURL: process.env.BaseURL || "https://store.steampowered.com/",
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: "on",
-    screenshot: "on",
-    video: "on",
+    trace: "retain-on-failure",
+    screenshot: "only-on-failure",
   },
 
   /* Configure projects for major browsers */
