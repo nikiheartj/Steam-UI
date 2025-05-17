@@ -22,7 +22,7 @@ env:
   REPORT_LINK_TELEGRAM: ${{ secrets.REPORT_LINK_TELEGRAM }}
 
 jobs:
-  api-tests:
+  steam-ui-tests:
     timeout-minutes: 30
     runs-on: ubuntu-latest
     steps:
