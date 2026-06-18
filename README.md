@@ -16,8 +16,6 @@
 
 - <a href="#allure">Test reports in Allure Report</a>
 
-- <a href="#testops">Integration with TestOps</a>
-
 - <a href="#telegram">Notifications in Telegram using a bot</a>
 
 - <a href="#video">Example of a test run in Playwright</a>
@@ -26,9 +24,11 @@
 
 ## Technology Stack
 
-| JavaScript                                                                                                    | VS Code                                                                                                                             | GitHub                                                                                                    | Playwright                                                                                                         | Allure                                                                                                          | TestOps                                                                                                       | Telegram                                                                                                        |                                                                                                         Jenkins |
-| :------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------: |
-| <a href="https://nodejs.org/en"><img src="src/images/JavaScript.svg" width="50" height="50"  alt="Java"/></a> | <a id ="tech" href="https://code.visualstudio.com/"><img src="src/images/VSCode Image.png" width="50" height="50"  alt="IDEA"/></a> | <a href="https://github.com/"><img src="src/images/gitHub.svg" width="50" height="50"  alt="Github"/></a> | <a href="https://playwright.dev/"><img src="src/images/playwright.svg" width="50" height="50"  alt="JUnit 5"/></a> | <a href="https://allurereport.org/"><img src="src/images/allure.png" width="50" height="50"  alt="Gradle"/></a> | <a href="https://qatools.ru/"><img src="src/images/test-ops.png" width="50" height="50"  alt="Selenide"/></a> | <a href="https://telegram.org/"><img src="src/images/telegram.svg" width="50" height="50"  alt="Selenoid"/></a> | <a href="https://www.jenkins.io/"><img src="src/images/jenkins.svg" width="50" height="50"  alt="Jenkins"/></a> |
+| JavaScript | VS Code | GitHub | Playwright | Allure | Telegram | Jenkins |
+| :--- | :--- | :--- | :--- | :--- | :--- | ---: |
+| <a href="https://nodejs.org/en"><img src="src/images/JavaScript.svg" width="50" height="50" alt="JavaScript"/></a> | <a href="https://code.visualstudio.com/"><img src="src/images/VSCode Image.png" width="50" height="50" alt="VS Code"/></a> | <a href="https://github.com/"><img src="src/images/gitHub.svg" width="50" height="50" alt="Github"/></a> | <a href="https://playwright.dev/"><img src="src/images/playwright.svg" width="50" height="50" alt="Playwright"/></a> | <a href="https://allurereport.org/"><img src="src/images/allure.png" width="50" height="50" alt="Allure"/></a> | <a href="https://telegram.org/"><img src="src/images/telegram.svg" width="50" height="50" alt="Telegram"/></a> | <a href="https://www.jenkins.io/"><img src="src/images/jenkins.svg" width="50" height="50" alt="Jenkins"/></a> |
+
+<a id="cases"></a>
 
 <a id="cases"></a>
 
@@ -111,21 +111,7 @@ npm run open-report
 <img title="Allure Tests" src="src/images/test-cases-report.png">
 </p>
 
-<a id="testops"></a>
-
-## <img src="src/images/test-ops.png" width="25" height="25"/></a> Integration with [TestOps]()
-
-> Test runs can be visualized as charts.
-
-<p align="center">
-<img title="Allure TestOps" src="src/images/testo-ops-dashboard.png">
-</p>
-
-> Test cases stay up-to-date since scenarios are extracted from the code.
-
-<p align="center">
-<img title="Allure TestOps" src="src/images/testcases-test-ops.png">
-</p>
+<a id="test-cases-report"></a>
 
 <a id="telegram"></a>
 
